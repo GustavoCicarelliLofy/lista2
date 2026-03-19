@@ -1,2 +1,3 @@
 # lista2
 Jujutsu kaisen é muito bom hehehe
+Grupo: Gustavo Cicarelli (jujutsu user), Gabriel Stofel (Editor Geek), Guilherme Fernandes (ADM)
