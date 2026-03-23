@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="exercicio-03.css">
+  <script src="exercicio-03.js"></script>
+</head>
+<body> 
+    <h3>distância total em quilômetros.</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="valores" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="valor">0 km</div>
+    <h3>valor do consumo médio do veículo (km/L).</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="percentual" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="comsu">0 Km/L</div>
+    <h3> preço do combustível por litro.</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="preco" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="pre">R$0</div>
+    <br>
+    <button onclick="calcular(valores.value,percentual.value,preco.value)">calcular</button>
+    <br>
+    <br>
+    <h3>custo total da viagem.</h3>
+    <div id="resposta"></div>
+    <br>
+    <div id="t"></div>
+  <!-- <script>
+    // function calcular(preco,porcentagem) {
+    //   valor.textContent = `R$${preco}`;
+    //   porcent.textContent = `${porcentagem}%`;
+    //   desconto =  preco * (porcentagem/100)
+    //   resposta.textContent = `${preco - desconto}`;
+    //   t.textContent = `Um produto de R$${preco} com ${porcentagem}% de desconto fica com R$${preco - desconto} e conomizamdo R$${desconto}`;
+    // }      
+  </script> -->
+</body>
+</html>
