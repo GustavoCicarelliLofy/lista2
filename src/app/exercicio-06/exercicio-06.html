@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="exercicio-06.css">
+  <script src="exercicio-06.js"></script>
+</head>
+<body>
+  <h2>Cálculo de posição no Movimento Retilíneo Uniforme (MRU)</h1>
+    <h3>posição inicial do objeto (em metros).</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="valores" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="valor">0 m</div>
+    <h3>velocidade constante do objeto (em metros por segundo [m/s])</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="percentual" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="comsu">0 m/s</div>
+    <h3>  tempo de deslocamento (em segundos).</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="preco" value="0" min="0" oninput="calcular(valores.value,percentual.value,preco.value)"/>
+    <div id="pre">0 s</div>
+    <br>
+    <button onclick="calcular(valores.value,percentual.value,preco.value)">calcular</button>
+    <br>
+    <br>
+    <h3>posição final do objeto.</h3>
+    <div id="resposta"></div>
+    <br>
+    <!-- <div id="t"></div> -->
+</body>
+</html>
