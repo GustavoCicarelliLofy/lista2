@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="exercicio-01.css">
+  <script src="exercicio-01.js"></script>
+  <!-- <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+}
+
+button {
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+#valor, #porcent, #resposta, #t {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+  </style> -->
+</head>
+<body>
+  <h2>Cálculo de desconto em compras</h1>
+    <h3>preço do produto</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="valores" value="0" min="0"/>
+    <div id="valor">R$0</div>
+    <h3>percentual de desconto do produto</h3>
+    <!-- oninput="calcular(valores.value,percentual.value)" -->
+    <input type="number" id="percentual" value="0" min="0"/>
+    <div id="porcent">0%</div>
+    <br>
+    <button onclick="calcular(valores.value,percentual.value)">calcular</button>
+    <br>
+    <br>
+    <h3>valor com o desconto</h3>
+    <div id="resposta"></div>
+    <br>
+    <div id="t"></div>
+  <!-- <script>
+    // function calcular(preco,porcentagem) {
+    //   valor.textContent = `R$${preco}`;
+    //   porcent.textContent = `${porcentagem}%`;
+    //   desconto =  preco * (porcentagem/100)
+    //   resposta.textContent = `${preco - desconto}`;
+    //   t.textContent = `Um produto de R$${preco} com ${porcentagem}% de desconto fica com R$${preco - desconto} e conomizamdo R$${desconto}`;
+    // }      
+  </script> -->
+</body>
+</html>
